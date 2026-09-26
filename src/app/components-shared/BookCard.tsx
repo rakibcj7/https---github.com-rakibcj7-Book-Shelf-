@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Type from '@/types/BookType'
+import Link from 'next/link'
 
 
 
@@ -84,12 +85,12 @@ const BookCard = ({ book }: { book: Type }) => {
         </div>
 
         {/* Button */}
-        <button
-          type="button"
-          className="mt-4 w-full rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-gray-700"
-        >
-          View Details
-        </button>
+<Link href={`/books/${book.bookId}`} className="mt-4 w-full block rounded-lg bg-gray-900 px-4 py-2.5 text-sm font-medium text-white text-center transition hover:bg-gray-700">
+  View Details
+</Link>
+      
+       
+   
 
       </div>
     </article>
