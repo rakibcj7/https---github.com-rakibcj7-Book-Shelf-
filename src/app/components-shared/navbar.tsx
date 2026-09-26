@@ -32,9 +32,12 @@ const navbar = () => {
           <a className="btn btn-ghost text-xl">Book VIbes</a>
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex gap-2">
         <ul className="menu menu-horizontal px-1">
+        <div className="flex gap-2">
          <Link href='/listedbooks'>Books</Link>
+         <Link href='/ReadList'>Read list</Link>
+         </div>
           <li>
             <details>
               <summary>Parent</summary>

@@ -2,6 +2,7 @@ import booksData from "../../../../public/booksData.json";
 import Type from "@/types/BookType";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import ReadButton from "@/app/components-shared/BookDetails/ReadButton";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -86,11 +87,7 @@ const Page = async ({ params }: PageProps) => {
             ))}
           </div>
 
-          <div className="card-actions mt-8">
-            <button className="btn btn-primary px-8">
-              Listen
-            </button>
-          </div>
+         <ReadButton book={book}/>
         </div>
       </div>
     </div>
