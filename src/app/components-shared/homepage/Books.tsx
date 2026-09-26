@@ -12,7 +12,7 @@ const Books = () => {
       <div className="container mx-auto px-4">
         <h2 className="mb-8 text-3xl font-bold">Featured Books</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {books.map((book) => (
+          {books.slice(0,4).map((book) => (
             <BookCard key={book.bookId ?? book.bookName} book={book} />
           ))}
         </div>

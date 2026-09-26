@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import logo from '@/assets/book.ico';
+import Link from 'next/link'
 
 const navbar = () => {
   return (
@@ -33,7 +34,7 @@ const navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
+         <Link href='/listedbooks'>Books</Link>
           <li>
             <details>
               <summary>Parent</summary>
