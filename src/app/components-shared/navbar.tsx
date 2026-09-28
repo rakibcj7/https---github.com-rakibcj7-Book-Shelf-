@@ -34,10 +34,11 @@ const navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex gap-2">
         <ul className="menu menu-horizontal px-1">
-        <div className="flex gap-2">
-         <Link href='/listedbooks'>Books</Link>
-         <Link href='/ReadList'>Read list</Link>
-         </div>
+<div className="flex gap-2">
+          <Link href='/listedbooks'>Books</Link>
+          <Link href='/ReadList'>Read list</Link>
+          <Link href='/WishList'>Wishlist</Link>
+          </div>
           <li>
             <details>
               <summary>Parent</summary>
