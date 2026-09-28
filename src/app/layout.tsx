@@ -2,6 +2,7 @@ import type { Metadata, LayoutProps } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components-shared/navbar";
+import Footer from "./components-shared/Footer";
 import BookProvider from "@/context/BookContext";
 
 const geistSans = Geist({
@@ -26,12 +27,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
      
-      <body className="min-h-full flex flex-col">
+<body className="min-h-full flex flex-col">
          <BookProvider>
          <Navbar/>
-        {children}
-        </BookProvider>
-        </body>
+         <main className="flex-1">{children}</main>
+         <Footer/>
+         </BookProvider>
+         </body>
     </html>
   );
 }
