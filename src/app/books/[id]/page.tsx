@@ -3,6 +3,7 @@ import Type from "@/types/BookType";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import ReadButton from "@/app/components-shared/BookDetails/ReadButton";
+import WishListButton from "@/app/components-shared/BookDetails/WishListButton";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -87,7 +88,8 @@ const Page = async ({ params }: PageProps) => {
             ))}
           </div>
 
-         <ReadButton book={book}/>
+         <ReadButton book={book} />
+         <WishListButton book={book} /> 
         </div>
       </div>
     </div>

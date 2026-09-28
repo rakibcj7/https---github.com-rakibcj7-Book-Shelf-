@@ -1,4 +1,4 @@
- type Book = {
+ export type Book = {
   bookId?: number;
   image: string;
   bookName: string;

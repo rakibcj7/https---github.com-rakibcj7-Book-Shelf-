@@ -12,7 +12,7 @@ const ReadButton = ({book}: {book: Book}) => {
     const handleReadBook = ()=>{
         console.log("read button clicked", book)
         setReadBooks([...readBooks, book])
-
+      alert(`you have added ${book.bookName}`)
     }
     return (
       
